@@ -24,9 +24,8 @@ hi TabLineFill ctermfg=Black ctermbg=Black
 hi TabLineSel ctermfg=Green ctermbg=Black
 hi TabLine ctermfg=Grey
 
-
 "Abbreviations
-ab diep die('<pre>'.print_r([],1).'</pre>');
+ab diep die('<pre>'.print_r([<ESC>la,1<ESC>la.<ESC>$a;<ESC>F]i
 ab phpclass <?php<CR><CR>class extends OtherClass<CR>{<CR>}<ESC>kkk_Ea
 ab phpnclass <?php<CR><CR>namespace ;<CR><CR>class extends OtherClass<CR>{<CR>}<ESC>kkk_Ea
 
@@ -60,3 +59,14 @@ else
     let &t_SI = "\<Esc>]50;CursorShape=1\x7"
     let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
+
+"Closetag plugin
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.php'
+
+"256 colours
+if !has('gui_running')
+  set t_Co=256
+endif
+
+"Force :E to :Explore
+command! E Explore

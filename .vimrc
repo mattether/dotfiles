@@ -4,8 +4,8 @@ execute pathogen#infect()
 "Global settings
 filetype plugin indent on
 syntax on
-set mouse=a
-set tabstop=4
+set mouse=a "mouse support
+set tabstop=4 "default tab length
 set autoindent
 set cindent
 set expandtab
@@ -18,6 +18,7 @@ set ttimeoutlen=0
 set directory=~/.vim/.swp
 set laststatus=2
 set switchbuf=usetab,newtab
+set exrc "project specific .vimrc
 
 "Tabs
 hi TabLineFill ctermfg=Black ctermbg=Black
@@ -47,6 +48,7 @@ let g:netrw_hide = 1
 "File type specific indenting
 autocmd FileType sql setlocal shiftwidth=2 tabstop=2
 autocmd FileType json setlocal shiftwidth=2 tabstop=2
+autocmd FileType yml setlocal shiftwidth=2 tabstop=2
 
 "Show line numbers and relative in netrw
 let g:netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
@@ -70,3 +72,12 @@ endif
 
 "Force :E to :Explore
 command! E Explore
+
+"Shift tab for insert mode
+inoremap <S-Tab> <C-d>
+
+"CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+set secure

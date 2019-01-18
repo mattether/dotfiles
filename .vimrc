@@ -46,9 +46,9 @@ let g:netrw_list_hide = '^\./$'
 let g:netrw_hide = 1
 
 "File type specific indenting
-autocmd FileType sql setlocal shiftwidth=2 tabstop=2
-autocmd FileType json setlocal shiftwidth=2 tabstop=2
-autocmd FileType yml setlocal shiftwidth=2 tabstop=2
+autocmd FileType sql setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType json setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType yml,yaml setlocal shiftwidth=2 tabstop=2 expandtab
 
 "Show line numbers and relative in netrw
 let g:netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
@@ -79,5 +79,16 @@ inoremap <S-Tab> <C-d>
 "CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+"Statusbar
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gitbranch#name'
+      \ },
+      \ }
 
 set secure

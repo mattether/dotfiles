@@ -6,7 +6,7 @@ alias dcud='docker-compose up -d'
 alias dcd='docker-compose down'
 alias dcre='docker-compose restart'
 alias dce='docker-compose exec'
-alias dcr='docker-compose run'
+alias dcr='docker-compose run --rm'
 alias dcb='docker-compose build'
 
 alias g='git'

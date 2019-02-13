@@ -68,6 +68,8 @@ plugins=(
   git
   dotenv
   osx
+  ssh-agent
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh

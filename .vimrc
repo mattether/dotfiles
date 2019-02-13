@@ -19,6 +19,10 @@ set directory=~/.vim/.swp
 set laststatus=2
 set switchbuf=usetab,newtab
 set exrc "project specific .vimrc
+set hlsearch
+
+"Mappings
+nnoremap <silent> ,<space> :nohlsearch<CR>
 
 "Tabs
 hi TabLineFill ctermfg=Black ctermbg=Black
@@ -28,7 +32,7 @@ hi TabLine ctermfg=Grey
 "Abbreviations
 ab diep die('<pre>'.print_r([<ESC>la,1<ESC>la.<ESC>$a;<ESC>F]i
 ab phpclass <?php<CR><CR>class extends OtherClass<CR>{<CR>}<ESC>kkk_Ea
-ab phpnclass <?php<CR><CR>namespace ;<CR><CR>class extends OtherClass<CR>{<CR>}<ESC>kkk_Ea
+ab phpnclass <?php<CR><CR>namespace ;<CR><CR>class extends <CR>{<CR>}<ESC>kkk_Ea
 
 "Cursor shape in different modes
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
@@ -79,6 +83,7 @@ inoremap <S-Tab> <C-d>
 "CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard'] "ignore file from .gitignore
 
 "Statusbar
 let g:lightline = {

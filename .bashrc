@@ -1,33 +1,31 @@
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
+# docker
 alias dc='docker-compose'
-alias dcu='docker-compose up'
 alias dcud='docker-compose up -d'
+alias dcu='docker-compose up'
 alias dcd='docker-compose down'
 alias dcre='docker-compose restart'
 alias dce='docker-compose exec'
 alias dcr='docker-compose run --rm'
 alias dcb='docker-compose build'
 
+# git
 alias g='git'
+alias gcm='git commit -m'
+alias gc='git commit'
 alias gs='git status'
 alias gst='git stash'
 alias ga='git add'
 alias gr='git reset'
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gp='git push'
 alias gpl='git pull'
 alias gcl='git clone'
 alias gch='git checkout'
+alias gp='git push'
 alias gd='git diff'
 alias gm='git merge'
 
+# composer
 alias c='composer'
 alias cu='composer update'
 alias csu='composer self-update'
 alias ci='composer install'
 alias cr='composer require'
-
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

@@ -5,5 +5,5 @@ brew update
 brew install $(cat ~/.brewapps)
 brew install $(cat ~/.brewcask)
 git clone https://github.com/powerline/fonts.git --depth=1 ~/.fonts
-~/.fonts/.install.sh
+~/.fonts/install.sh
 rm -rf ~/.fonts

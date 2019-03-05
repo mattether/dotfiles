@@ -1,5 +1,28 @@
 " Enable pathogen plugin handler
-execute pathogen#infect()
+" execute pathogen#infect()
+
+" Vundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'alvan/vim-closetag'
+Plugin 'ap/vim-buftabline'
+Plugin 'arnaud-lb/vim-php-namespace'
+Plugin 'chr4/nginx.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'evidens/vim-twig'
+Plugin 'gioele/vim-autoswap.git'
+Plugin 'itchyny/lightline.vim'
+Plugin 'itchyny/vim-gitbranch'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'mattn/emmet-vim.git'
+Plugin 'phpactor/phpactor'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'vim-scripts/BufOnly.vim'
+call vundle#end()
 
 " Global settings
 filetype plugin indent on

@@ -21,6 +21,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'mattn/emmet-vim.git'
 Plugin 'phpactor/phpactor'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/BufOnly.vim'
 call vundle#end()
 

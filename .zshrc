@@ -70,6 +70,9 @@ plugins=(
   osx
   ssh-agent
   tmux
+  docker
+  docker-compose
+  encode64
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -102,3 +105,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+prompt_context() {}

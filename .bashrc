@@ -1,12 +1,12 @@
 # docker
-alias dc='docker-compose'
-alias dcud='docker-compose up -d'
-alias dcu='docker-compose up'
-alias dcd='docker-compose down'
-alias dcre='docker-compose restart'
-alias dce='docker-compose exec'
-alias dcr='docker-compose run --rm'
-alias dcb='docker-compose build'
+# alias dc='docker-compose'
+# alias dcud='docker-compose up -d'
+# alias dcu='docker-compose up'
+# alias dcd='docker-compose down'
+# alias dcre='docker-compose restart'
+# alias dce='docker-compose exec'
+# alias dcr='docker-compose run --rm'
+# alias dcb='docker-compose build'
 
 # git
 alias g='git'

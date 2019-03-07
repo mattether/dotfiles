@@ -2,6 +2,8 @@
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
+brew install yadm
+yadm clone https://github.com/archlemon/dotfiles
 brew install $(cat ~/.brewapps)
 brew install $(cat ~/.brewcask)
 git clone https://github.com/powerline/fonts.git --depth=1 ~/.fonts

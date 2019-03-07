@@ -15,11 +15,14 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'evidens/vim-twig'
 Plugin 'gioele/vim-autoswap.git'
+Plugin 'henrik/vim-indexed-search'
 Plugin 'itchyny/lightline.vim'
 Plugin 'itchyny/vim-gitbranch'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'mattn/emmet-vim.git'
 Plugin 'phpactor/phpactor'
+Plugin 'prettier/vim-prettier'
+Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/BufOnly.vim'
@@ -141,5 +144,10 @@ autocmd FileType php inoremap <Leader>u <Esc>:call IPhpInsertUse()<CR>
 autocmd FileType php noremap <Leader>u :call PhpInsertUse()<CR>
 autocmd FileType php inoremap <Leader>e <Esc>:call IPhpExpandClass()<CR>
 autocmd FileType php noremap <Leader>e :call PhpExpandClass()<CR>
+
+
+" PHP CS fixer
+let g:php_cs_fixer_php_path = "/usr/bin/php"
+autocmd BufWritePost *.php silent! call PhpCsFixerFixFile()
 
 set secure

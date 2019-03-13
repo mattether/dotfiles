@@ -26,6 +26,7 @@ Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/BufOnly.vim'
+Plugin 'yggdroot/indentLine'
 call vundle#end()
 
 " Global settings

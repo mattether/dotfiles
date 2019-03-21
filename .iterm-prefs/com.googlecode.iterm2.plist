@@ -1305,13 +1305,13 @@ Toggle Full Screen</string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 2880 1620 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>263 376 918 452 0 0 2880 1597 </string>
+	<string>263 350 918 512 0 0 2880 1620 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>560 792 592 584 0 0 2880 1597 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>29 1049 850 443 0 0 2880 1620 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>687 692 1249 560 0 0 2880 1620 </string>
+	<string>687 809 850 443 0 0 2880 1620 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>1451 983 850 452 0 0 2880 1597 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -1667,7 +1667,7 @@ Toggle Full Screen</string>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>exec tmux</string>
+			<string>ssh-add ~/.ssh/github; exec tmux</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -2264,7 +2264,7 @@ Quit iTerm2</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-03-11T09:53:33Z</date>
+	<date>2019-03-20T09:53:19Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>

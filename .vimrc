@@ -34,22 +34,18 @@ call vundle#end()
 " Global settings
 filetype plugin indent on
 syntax on
-set mouse=a " mouse support
-set tabstop=4 " default tab length
-set autoindent
-set cindent
-set expandtab
-set shiftwidth=4
-" set cul
-set number relativenumber
-set nu rnu
-set timeoutlen=1000
-set ttimeoutlen=0
-set directory=~/.vim/.swp
-set laststatus=2
-set switchbuf=usetab,newtab
+set autoindent cindent expandtab " indent options
+set bs=2 " backspace fix
+set directory=~/.vim/.swp " custom swap dir
 set exrc " project specific .vimrc
-set hlsearch
+set hlsearch " highlight searches
+set laststatus=2 " status bar
+set mouse=a " mouse support
+set nu rnu " line numbers and relative
+set shiftwidth=4 " default 4 spaces
+set switchbuf=usetab,newtab
+set tabstop=4 " default tab length
+set timeoutlen=1000 ttimeoutlen=0 " changing timeouts for better response
 
 " Mappings
 let mapleader = ","

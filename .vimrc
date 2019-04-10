@@ -52,10 +52,9 @@ set undofile " maintain undo history between sessions
 set undodir=~/.vim/.undo
 
 " Mappings
-let mapleader = ","
 nnoremap <silent> ,<space> :nohlsearch<CR>
-nnoremap <silent> <space>[ :bp<CR>
-nnoremap <silent> <space>] :bn<CR>
+nnoremap <silent> [b :bp<CR>
+nnoremap <silent> ]b :bn<CR>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <ESC>:w<CR>
 vnoremap <C-s> <ESC>:w<CR>

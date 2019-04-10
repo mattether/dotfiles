@@ -49,6 +49,7 @@ set switchbuf=usetab,newtab
 set tabstop=4 " default tab length
 set timeoutlen=1000 ttimeoutlen=0 " changing timeouts for better response
 set undofile " maintain undo history between sessions
+set undodir=~/.vim/.undo
 
 " Mappings
 let mapleader = ","

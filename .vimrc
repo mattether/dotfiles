@@ -49,14 +49,14 @@ set shiftwidth=4 " default 4 spaces
 set switchbuf=usetab,newtab
 set tabstop=4 " default tab length
 set timeoutlen=1000 ttimeoutlen=0 " changing timeouts for better response
+set undofile " maintain undo history between sessions
+set undodir=~/.vim/.undo
 
 " Mappings
 " let mapleader = ","
 nnoremap <silent> ,<space> :nohlsearch<CR>
 nnoremap <silent> [b :bp<CR>
 nnoremap <silent> ]b :bn<CR>
-nnoremap <silent> <space>[ :bp<CR>
-nnoremap <silent> <space>] :bn<CR>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <ESC>:w<CR>
 vnoremap <C-s> <ESC>:w<CR>

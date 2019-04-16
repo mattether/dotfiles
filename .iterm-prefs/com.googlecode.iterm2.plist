@@ -1305,7 +1305,7 @@ Toggle Full Screen</string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 2880 1620 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>263 350 918 512 0 0 2880 1620 </string>
+	<string>263 277 918 514 0 0 2880 1597 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>560 792 592 584 0 0 2880 1597 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -2174,6 +2174,8 @@ Quit iTerm2</string>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Unicode Version</key>
+			<integer>8</integer>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
@@ -2264,7 +2266,7 @@ Quit iTerm2</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-03-20T09:53:19Z</date>
+	<date>2019-04-04T17:00:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>

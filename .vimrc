@@ -7,6 +7,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'alvan/vim-closetag'
 Plugin 'ap/vim-buftabline'
 Plugin 'arnaud-lb/vim-php-namespace'
@@ -50,8 +51,10 @@ set tabstop=4 " default tab length
 set timeoutlen=1000 ttimeoutlen=0 " changing timeouts for better response
 
 " Mappings
-let mapleader = ","
+" let mapleader = ","
 nnoremap <silent> ,<space> :nohlsearch<CR>
+nnoremap <silent> [b :bp<CR>
+nnoremap <silent> ]b :bn<CR>
 nnoremap <silent> <space>[ :bp<CR>
 nnoremap <silent> <space>] :bn<CR>
 nnoremap <C-s> :w<CR>

@@ -154,4 +154,7 @@ autocmd FileType php noremap <Leader>e :call PhpExpandClass()<CR>
 let g:php_cs_fixer_php_path = "/usr/bin/php"
 autocmd BufWritePost *.php silent! call PhpCsFixerFixFile()
 
+" Show buffer number in bufftabline
+let g:buftabline_numbers=1
+
 set secure

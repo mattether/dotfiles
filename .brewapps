@@ -2,5 +2,6 @@ dnsmasq
 git
 php-cs-fixer
 tmux
+rmtrash
 vim
 yadm

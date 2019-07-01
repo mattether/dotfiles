@@ -84,7 +84,7 @@ let g:netrw_banner=0
 set whichwrap+=<,>,h,l,[,]
 
 " Hide current folder in netrw
-let g:netrw_list_hide = '^\./$'
+let g:netrw_list_hide = '^\./$,.*\.git'
 let g:netrw_hide = 1
 
 " File type specific indenting

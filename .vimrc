@@ -1,40 +1,40 @@
 " Enable pathogen plugin handler
 " execute pathogen#infect()
 
-" Vundle
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'alvan/vim-closetag'
-Plugin 'ap/vim-buftabline'
-Plugin 'arnaud-lb/vim-php-namespace'
-Plugin 'chr4/nginx.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'ervandew/supertab'
-Plugin 'evidens/vim-twig'
-Plugin 'gioele/vim-autoswap.git'
-Plugin 'henrik/vim-indexed-search'
-Plugin 'itchyny/lightline.vim'
-Plugin 'itchyny/vim-gitbranch'
-Plugin 'jiangmiao/auto-pairs'
-" Plugin 'joonty/vim-phpqa.git'
-Plugin 'jparise/vim-graphql'
-Plugin 'mattn/emmet-vim.git'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'phpactor/phpactor'
-Plugin 'prettier/vim-prettier'
-Plugin 'stephpy/vim-php-cs-fixer'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-abolish'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-scripts/BufOnly.vim'
-Plugin 'yggdroot/indentLine'
-call vundle#end()
+
+" vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'VundleVim/Vundle.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'alvan/vim-closetag'
+Plug 'ap/vim-buftabline'
+Plug 'arnaud-lb/vim-php-namespace'
+Plug 'chr4/nginx.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'edkolev/tmuxline.vim'
+Plug 'ervandew/supertab'
+Plug 'evidens/vim-twig'
+Plug 'gioele/vim-autoswap'
+Plug 'henrik/vim-indexed-search'
+Plug 'itchyny/lightline.vim'
+Plug 'itchyny/vim-gitbranch'
+Plug 'jiangmiao/auto-pairs'
+Plug 'jparise/vim-graphql'
+Plug 'mattn/emmet-vim'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'phpactor/phpactor'
+Plug 'prettier/vim-prettier'
+Plug 'stephpy/vim-php-cs-fixer'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-scripts/BufOnly.vim'
+Plug 'yggdroot/indentLine'
+call plug#end()
 
 " Global settings
 filetype plugin indent on

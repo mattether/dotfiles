@@ -45,7 +45,7 @@ set directory=~/.vim/.swp " custom swap dir
 set exrc " project specific .vimrc
 set hlsearch " highlight searches
 set laststatus=2 " status bar
-set mouse=a " mouse support
+set mouse=i " mouse support for insert mode
 set nu rnu " line numbers and relative
 set shiftwidth=4 " default 4 spaces
 set switchbuf=usetab,newtab

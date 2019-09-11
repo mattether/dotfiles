@@ -10,7 +10,7 @@ Plug 'VundleVim/Vundle.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-closetag'
 Plug 'ap/vim-buftabline'
-Plug 'arnaud-lb/vim-php-namespace'
+Plug 'arnaud-lb/vim-php-namespace', {'for': 'php'}
 Plug 'chr4/nginx.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'edkolev/tmuxline.vim'
@@ -22,12 +22,14 @@ Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jparise/vim-graphql'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 Plug 'mattn/emmet-vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'phpactor/phpactor'
+Plug 'phpactor/phpactor', {'for': 'php'}
 Plug 'prettier/vim-prettier'
-Plug 'stephpy/vim-php-cs-fixer'
+Plug 'stephpy/vim-php-cs-fixer', {'for': 'php'}
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
@@ -39,7 +41,7 @@ call plug#end()
 " Global settings
 filetype plugin indent on
 syntax on
-set autoindent cindent expandtab " indent options
+set autoindent cindent expandtab smartindent " indent options
 set bs=2 " backspace fix
 set directory=~/.vim/.swp " custom swap dir
 set exrc " project specific .vimrc
@@ -53,6 +55,8 @@ set tabstop=4 " default tab length
 set timeoutlen=1000 ttimeoutlen=0 " changing timeouts for better response
 set undofile " maintain undo history between sessions
 set undodir=~/.vim/.undo
+set conceallevel=0
+set wildmenu
 
 " Mappings
 " let mapleader = ","
@@ -90,7 +94,7 @@ let g:netrw_hide = 1
 
 " File type specific indenting
 autocmd FileType sql setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType json setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType javascript,json setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType yml,yaml setlocal shiftwidth=2 tabstop=2 expandtab
 
 " Show line numbers and relative in netrw
@@ -140,6 +144,7 @@ let g:lightline = {
 
 " Fix php indenting
 let g:PHP_vintage_case_default_indent = 1
+let g:indentLine_conceallevel = 0
 
 " PHP namespace completed
 function! IPhpInsertUse()

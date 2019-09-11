@@ -1,5 +1,6 @@
 dnsmasq
 git
+node
 php-cs-fixer
 tmux
 rmtrash

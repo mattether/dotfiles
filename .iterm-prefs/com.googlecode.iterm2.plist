@@ -1325,7 +1325,7 @@ Toggle Full Screen</string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>270 377 928 394 0 0 2880 1620 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>660 853 850 458 0 0 2880 1620 </string>
+	<string>659 853 850 458 0 0 2880 1620 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>282 1055 850 458 0 0 2880 1620 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1439,13 +1439,13 @@ Toggle Full Screen</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.87058823529411766</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.82352941176470584</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.80392156862745101</real>
+				<real>1</real>
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
@@ -1517,13 +1517,13 @@ Toggle Full Screen</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.873462975025177</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.82556074857711792</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.80396169424057007</real>
+				<real>1</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -1666,13 +1666,13 @@ Toggle Full Screen</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.87353497743606567</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.82777673006057739</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.75215941667556763</real>
+				<real>1</real>
 			</dict>
 			<key>Guid</key>
 			<string>3E07C985-7100-443C-92D1-0A3AA748F6D4</string>
@@ -2260,7 +2260,7 @@ Quit iTerm2</string>
 	<key>NoSyncInstallationId</key>
 	<string>D2907EAD-837A-453C-86A0-6D94788415BD</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>18</integer>
+	<integer>19</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3015,7 +3015,7 @@ Quit iTerm2</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-09-10T16:00:35Z</date>
+	<date>2019-09-11T16:00:45Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>

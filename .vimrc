@@ -56,6 +56,7 @@ set undofile " maintain undo history between sessions
 set undodir=~/.vim/.undo
 set conceallevel=0
 set wildmenu
+set updatetime=300
 
 " Mappings
 " let mapleader = ","

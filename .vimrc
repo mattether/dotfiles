@@ -1,5 +1,5 @@
-" Enable pathogen plugin handler
-" execute pathogen#infect()
+" COC extension
+" :CocInstall coc-json coc-css coc-phpls coc-html coc-tsserver coc-yaml coc-emmet coc-spell-checker
 
 set nocompatible
 filetype off
@@ -23,11 +23,12 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'jparise/vim-graphql'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'lifepillar/pgsql.vim'
 Plug 'mattn/emmet-vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'phpactor/phpactor', {'for': 'php'}
-Plug 'prettier/vim-prettier'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'stephpy/vim-php-cs-fixer', {'for': 'php'}
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-abolish'
@@ -163,5 +164,8 @@ autocmd BufWritePost *.php silent! call PhpCsFixerFixFile()
 
 " Show buffer number in bufftabline
 let g:buftabline_numbers=1
+
+" Coc language extensions
+let g:coc_global_extensions = 'coc-json coc-css coc-phpls coc-html coc-tsserver coc-yaml coc-emmet coc-spell-checker'
 
 set secure

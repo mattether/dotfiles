@@ -1,5 +1,5 @@
 " COC extension
-" :CocInstall coc-json coc-css coc-phpls coc-html coc-tsserver coc-yaml coc-emmet coc-spell-checker
+" :CocInstall coc-json coc-css coc-phpls coc-html coc-tsserver coc-yaml coc-emmet coc-sql
 
 set nocompatible
 filetype off
@@ -166,6 +166,6 @@ autocmd BufWritePost *.php silent! call PhpCsFixerFixFile()
 let g:buftabline_numbers=1
 
 " Coc language extensions
-let g:coc_global_extensions = 'coc-json coc-css coc-phpls coc-html coc-tsserver coc-yaml coc-emmet coc-spell-checker'
+let g:coc_global_extensions = 'coc-json coc-css coc-phpls coc-html coc-tsserver coc-yaml coc-emmet coc-sql'
 
 set secure

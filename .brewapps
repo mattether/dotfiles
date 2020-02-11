@@ -2,6 +2,7 @@ dnsmasq
 git
 node
 php-cs-fixer
+prettier
 tmux
 rmtrash
 vim

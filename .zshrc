@@ -5,6 +5,7 @@ export GPG_TTY=$(tty)
 export CLICOLOR=1
 export TERM=xterm-256color
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=244"
+export ZSH_DOTENV_PROMPT=false
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH

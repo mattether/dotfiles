@@ -168,4 +168,7 @@ let g:buftabline_numbers=1
 " Coc language extensions
 let g:coc_global_extensions = 'coc-json coc-css coc-phpls coc-html coc-tsserver coc-yaml coc-emmet coc-sql'
 
+" allow .vimlocal project configs
+silent! so .vimlocal
+
 set secure

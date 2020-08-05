@@ -74,9 +74,20 @@ hi TabLineSel ctermfg=Green ctermbg=Black
 hi TabLine ctermfg=Grey
 
 " Abbreviations
+" php
 ab diep die('<pre>'.print_r([<ESC>la,1<ESC>la.<ESC>$a;<ESC>F]i
-ab phpclass <?php<CR><CR>class extends OtherClass<CR>{<CR>}<ESC>kkk_Ea
-ab phpnclass <?php<CR><CR>namespace ;<CR><CR>class extends <CR>{<CR>}<ESC>kkk_Ea
+ab phpclass <?php<CR><CR>class extends OtherClass<CR>{<CR>}<ESC>3k_Ea
+ab phpnclass <?php<CR><CR>namespace ;<CR><CR>class extends <CR>{<CR>}<ESC>3k_Ea
+
+" postgres
+ab pguuid id uuid primary key default public.uuid_generate_v4(),<ESC>o
+ab pgsql create or replace function name() returns text as $$<CR>$$ language sql stable;<ESC>?name<CR>cw
+ab pgplpgsql create or replace function name() returns text as $$<CR>begin<CR>end;<CR>$$ language plpgsql stable;<ESC>?name<CR>cw
+ab pgdo do $$<CR>begin<CR>end<CR>$$;<ESC>kO
+ab pgtable create table if not exists name (<CR>id uuid not null default public.uuid_generate_v4(),<CR>);<ESC>?name<CR>cw
+ab pgenum create type name as enum (<CR>'value'<CR>);<ESC>?name<CR>cw
+ab pgtype create type name as (<CR>);<ESC>?name<CR>cw
+ab pgindex create index if not exists name on table;<ESC>?name<CR>cw
 
 " Cursor shape in different modes
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"

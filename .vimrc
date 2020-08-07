@@ -88,6 +88,9 @@ ab pgtable create table if not exists name (<CR>id uuid not null default public.
 ab pgenum create type name as enum (<CR>'value'<CR>);<ESC>?name<CR>cw
 ab pgtype create type name as (<CR>);<ESC>?name<CR>cw
 ab pgindex create index if not exists name on table;<ESC>?name<CR>cw
+ab pgpolicy create policy policy_name<CR>on table_name<CR>for all<CR>to role<CR>using (true)<CR>with check (true);<ESC>?policy_name<CR>cw
+ab pgpolicyselect create policy policy_name<CR>on table_name<CR>for select<CR>to role<CR>using (true);<ESC>?policy_name<CR>cw
+ab pgtrigger create or replace function name returns trigger as $$<CR>begin<CR>end;<CR>$$ language plpgsql volatile security definer;<ESC>?name<CR>cw
 
 " Cursor shape in different modes
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"

@@ -91,6 +91,8 @@ ab pgindex create index if not exists name on table;<ESC>?name<CR>cw
 ab pgpolicy create policy policy_name<CR>on table_name<CR>for all<CR>to role<CR>using (true)<CR>with check (true);<ESC>?policy_name<CR>cw
 ab pgpolicyselect create policy policy_name<CR>on table_name<CR>for select<CR>to role<CR>using (true);<ESC>?policy_name<CR>cw
 ab pgtrigger create or replace function name returns trigger as $$<CR>begin<CR>end;<CR>$$ language plpgsql volatile security definer;<ESC>?name<CR>cw
+ab pgiftype if not exists (select true from pg_type where typname = 'newtype') then<cr>create type newtype as (<CR>);<CR>end if;<ESC>?newtype<CR>n<C-n><C-n>s
+ab pgifenum if not exists (select true from pg_type where typname = 'newtype') then<cr>create type newtype as enum (<CR>);<CR>end if;<ESC>?newtype<CR>n<C-n><C-n>s
 
 " Cursor shape in different modes
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"

@@ -3,7 +3,8 @@ git
 node
 php-cs-fixer
 prettier
-tmux
+qutebrowser
 rmtrash
+tmux
 vim
 yadm

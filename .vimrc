@@ -184,6 +184,10 @@ let g:buftabline_numbers=1
 " Coc language extensions
 let g:coc_global_extensions = 'coc-json coc-css coc-phpls coc-html coc-tsserver coc-yaml coc-emmet coc-sql'
 
+" Git gutter
+highlight SignColumn ctermbg=none
+let g:gitgutter_set_sign_backgrounds = 1
+
 " allow .vimlocal project configs
 silent! so .vimlocal
 

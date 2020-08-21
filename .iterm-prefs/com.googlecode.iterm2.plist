@@ -12,6 +12,8 @@
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -1259,6 +1261,8 @@ Toggle Full Screen</string>
 	<false/>
 	<key>HideActivityIndicator</key>
 	<false/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
 	<key>HideTab</key>
 	<true/>
 	<key>HideTabCloseButton</key>
@@ -1327,7 +1331,7 @@ Toggle Full Screen</string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>270 377 928 394 0 0 2880 1620 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>24 1136 850 458 0 0 2880 1620 </string>
+	<string>4 1136 850 458 0 0 2880 1620 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>282 1055 850 458 0 0 2880 1620 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2240,6 +2244,7 @@ Quit iTerm2</string>
 		<string>3.2.9</string>
 		<string>3.3.1</string>
 		<string>3.3.0</string>
+		<string>3.3.12</string>
 		<string>3.3.6</string>
 	</array>
 	<key>NoSyncFrame_SessionsPreferences</key>
@@ -2254,7 +2259,7 @@ Quit iTerm2</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2880, 1620}}</string>
 		<key>topLeft</key>
-		<string>{559, 1119}</string>
+		<string>{558, 1119}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -2263,7 +2268,7 @@ Quit iTerm2</string>
 	<key>NoSyncInstallationId</key>
 	<string>D2907EAD-837A-453C-86A0-6D94788415BD</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>130</integer>
+	<integer>178</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2972,19 +2977,6 @@ Quit iTerm2</string>
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>intelep</string>
-		<string>ctags</string>
-		<string>select</string>
-		<string>PostgraphileNestedMutationsPlugin</string>
-		<string> name:</string>
-		<string>name:</string>
-		<string>#396</string>
-		<string>#456</string>
-		<string>graphql_nested_mutationk</string>
-		<string>debug</string>
-	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>580909659.11216104</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -3025,7 +3017,7 @@ Quit iTerm2</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
-	<false/>
+	<true/>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -3037,7 +3029,7 @@ Quit iTerm2</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-28T17:17:29Z</date>
+	<date>2020-08-19T09:04:41Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -3083,7 +3075,7 @@ Quit iTerm2</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.6</string>
+	<string>3.3.12</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

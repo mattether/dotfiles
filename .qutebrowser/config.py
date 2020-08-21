@@ -47,6 +47,14 @@ config.set('content.cookies.accept', 'all', 'chrome-devtools://*')
 #   - never: Don't accept cookies at all.
 config.set('content.cookies.accept', 'all', 'devtools://*')
 
+# Allow websites to request geolocations.
+# Type: BoolAsk
+# Valid values:
+#   - true
+#   - false
+#   - ask
+config.set('content.geolocation', False, 'https://www.google.com')
+
 # User agent to send.  The following placeholders are defined:  *
 # `{os_info}`: Something like "X11; Linux x86_64". * `{webkit_version}`:
 # The underlying WebKit version (set to a fixed value   with
@@ -151,9 +159,17 @@ config.set('content.javascript.enabled', True, 'chrome://*/*')
 # Type: Bool
 config.set('content.javascript.enabled', True, 'qute://*/*')
 
+# Allow websites to show notifications.
+# Type: BoolAsk
+# Valid values:
+#   - true
+#   - false
+#   - ask
+config.set('content.notifications', False, 'https://www.reddit.com')
+
 # Padding (in pixels) for the statusbar.
 # Type: Padding
-c.statusbar.padding = {'bottom': 5, 'left': 0, 'right': 0, 'top': 5}
+c.statusbar.padding = {'bottom': 5, 'left': 5, 'right': 5, 'top': 5}
 
 # Padding (in pixels) around text for tabs.
 # Type: Padding
@@ -189,5 +205,7 @@ c.url.default_page = 'https://google.com/'
 c.url.searchengines = {'DEFAULT': 'https://google.com/search?q={}'}
 
 # Bindings for normal mode
+config.bind('<Ctrl+x>', ':fake-key <escape>')
 config.bind('<Meta+Shift+[>', 'tab-prev')
 config.bind('<Meta+Shift+]>', 'tab-next')
+config.bind('<Meta+r>', 'reload')

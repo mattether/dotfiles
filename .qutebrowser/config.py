@@ -135,6 +135,16 @@ config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}; rv:71.0) Gecko
 # Type: FormatString
 config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}; rv:71.0) Gecko/20100101 Firefox/71.0', 'https://drive.google.com/*')
 
+# A list of patterns that should always be loaded, despite being ad-
+# blocked. Note this whitelists blocked hosts, not first-party URLs. As
+# an example, if `example.org` loads an ad from `ads.example.org`, the
+# whitelisted host should be `ads.example.org`. If you want to disable
+# the adblocker on a given page, use the `content.host_blocking.enabled`
+# setting with a URL pattern instead. Local domains are always exempt
+# from hostblocking.
+# Type: List of UrlPattern
+c.content.host_blocking.whitelist = ['https://*.onesignal.com', 'http://*.onesignal.com']
+
 # Load images automatically in web pages.
 # Type: Bool
 config.set('content.images', True, 'chrome-devtools://*')
@@ -166,6 +176,14 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 #   - false
 #   - ask
 config.set('content.notifications', False, 'https://www.reddit.com')
+
+# Allow websites to show notifications.
+# Type: BoolAsk
+# Valid values:
+#   - true
+#   - false
+#   - ask
+config.set('content.notifications', True, 'https://app.slack.com')
 
 # Padding (in pixels) for the statusbar.
 # Type: Padding
@@ -204,8 +222,14 @@ c.url.default_page = 'https://google.com/'
 # Type: Dict
 c.url.searchengines = {'DEFAULT': 'https://google.com/search?q={}'}
 
+# Page(s) to open at the start.
+# Type: List of FuzzyUrl, or FuzzyUrl
+c.url.start_pages = 'https://google.com'
+
 # Bindings for normal mode
 config.bind('<Ctrl+x>', ':fake-key <escape>')
 config.bind('<Meta+Shift+[>', 'tab-prev')
 config.bind('<Meta+Shift+]>', 'tab-next')
+config.bind('<Meta+Shift+t>', 'undo')
 config.bind('<Meta+r>', 'reload')
+config.bind('<Meta+t>', 'open -t')

@@ -10,6 +10,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-closetag'
 Plug 'ap/vim-buftabline'
 Plug 'arnaud-lb/vim-php-namespace', {'for': 'php'}
+Plug 'aserebryakov/vim-todo-lists'
 Plug 'chr4/nginx.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'edkolev/tmuxline.vim'

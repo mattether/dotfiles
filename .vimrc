@@ -22,6 +22,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jparise/vim-graphql'
+Plug 'jparise/vim-graphql'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'lifepillar/pgsql.vim'
@@ -68,6 +69,11 @@ nnoremap <silent> ]b :bn<CR>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <ESC>:w<CR>
 vnoremap <C-s> <ESC>:w<CR>
+" disable arrows
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
 
 " Tabs
 hi TabLineFill ctermfg=Black ctermbg=Black
@@ -85,7 +91,7 @@ ab pguuid id uuid primary key default public.uuid_generate_v4(),<ESC>o
 ab pgsql create or replace function name() returns text as $$<CR>$$ language sql stable;<ESC>?name<CR>cw
 ab pgplpgsql create or replace function name() returns text as $$<CR>begin<CR>end;<CR>$$ language plpgsql stable;<ESC>?name<CR>cw
 ab pgdo do $$<CR>begin<CR>end<CR>$$;<ESC>kO
-ab pgtable create table if not exists name (<CR>id uuid not null default public.uuid_generate_v4(),<CR>);<ESC>?name<CR>cw
+ab pgtable create table if not exists name (<CR>id uuid primary key not null default public.uuid_generate_v4(),<CR>);<ESC>?name<CR>cw
 ab pgenum create type name as enum (<CR>'value'<CR>);<ESC>?name<CR>cw
 ab pgtype create type name as (<CR>);<ESC>?name<CR>cw
 ab pgindex create index if not exists name on table;<ESC>?name<CR>cw
@@ -114,6 +120,7 @@ let g:netrw_hide = 1
 autocmd FileType sql setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType javascript,json setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType yml,yaml setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType ts,tsx,jsx setlocal shiftwidth=2 tabstop=2 expandtab
 
 " Show line numbers and relative in netrw
 let g:netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
